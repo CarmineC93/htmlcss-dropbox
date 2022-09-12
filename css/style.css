@@ -29,6 +29,13 @@ a, ul {
     max-width: 1200px;
 }
 
+hr {
+    height:2px;
+    width:30%;
+    background-color: grey;
+}
+
+
 /* HEADER */
 header{
     height: 80px;
@@ -79,7 +86,7 @@ main{
     width: 80%;
     margin: 0 auto;
     max-width: 1200px;
-    padding: 3rem 8rem;
+    padding: 8rem 0rem;
 }
 
 /* text box */
@@ -96,11 +103,6 @@ main{
 
 /* First section */
 
-hr {
-    height:2px;
-    width:30%;
-    background-color: grey;
-}
 
 /* Plans */
 
@@ -236,6 +238,33 @@ hr {
     /* DEBUG */
     border: 1px solid black;
 }
+
+/* FOOTER */
+footer{
+ background-color: black;
+}
+
+
+.big-box{
+    /* DEBUG */
+    background-color: aquamarine;
+}
+
+.top-footer-row{
+    gap: 10px;
+    margin: 2rem 0;
+}
+   
+.ft{
+    width: calc(100% / 5 - 10px);
+}
+
+.language{
+    margin: 2rem 0;
+}
+
+
+
 
 
 
