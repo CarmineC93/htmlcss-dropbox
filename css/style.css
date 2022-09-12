@@ -23,11 +23,21 @@ a, ul {
     list-style-type: none;
 }
 
-/* HEADER */
+.container{
+    width: 50%;
+    margin: 7rem auto;
+    max-width: 1200px;
+}
 
+/* HEADER */
 header{
     height: 80px;
     background-color: greenyellow;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
 }
 
 nav{    
@@ -51,15 +61,15 @@ li{
 }
 
 
-
 /* MAIN */
+main{
+    margin-top: 80px;
+}
 
 /* Jumbotron */
-
 .background{
         /* DEBUG */
     background-color: aqua;
-    height: 300px;
 }
 
 .big-box{
@@ -67,24 +77,116 @@ li{
     background-color: bisque;
 
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     max-width: 1200px;
     padding: 3rem 8rem;
 }
 
-   /* text box */
-.col-sx{
+/* text box */
+.small-side{
     width: 35%;
 }
 
-   /* image box */
-.col-dx{
+/* image box */
+.large-side{
     width: 65%;
     /* DEBUG */
     background-color: rgb(193, 123, 38);
 }
 
 /* First section */
+
+hr {
+    height:2px;
+    width:30%;
+    background-color: grey;
+}
+
+/* Plans */
+
+.title-col{
+    border: 1px solid grey;
+    line-height: 1rem;
+    text-align: center;
+}
+
+.row{
+   
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.row > div{
+    /* DEBUG */
+    border: 1px solid red;
+    height: 500px ;
+
+    flex-direction: column;
+    width: calc(100% / 3 - 10px);
+    padding: 1rem;
+}
+
+.enterprise-two{
+    margin: 1rem 0;
+        /* DEBUG */
+    border: 1px solid red;
+}
+
+.enterprise-two .sx{
+    width: 70%;
+}
+
+.enterprise-two .dx{
+    width: 30%;
+}
+ 
+.enterprise-two .sx, 
+.enterprise-two .dx {
+    padding: 1.5rem;
+}
+
+/* partner */
+.partner{
+    margin: 5rem 0;
+}
+
+.partner .small-side{
+    padding: 1.5rem;
+}
+
+/* operations */
+
+.ope-col{
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 1.5rem 0;
+}
+
+.card{
+    /* DEBUG */
+   border: 1px red solid;
+
+    width: calc(100% / 3 - 10px);
+}
+
+.our-customers h2{
+    padding: 1.5rem 0;
+}
+
+.our-customers a{
+    text-decoration: underline;
+}
+
+.our-customers{
+    padding: 2rem 9rem 3rem 0;
+}
+
+
+
+
+
+
+
 
 
 
