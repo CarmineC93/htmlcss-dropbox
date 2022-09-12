@@ -181,6 +181,64 @@ hr {
     padding: 2rem 9rem 3rem 0;
 }
 
+/* Second section */
+
+.second-sec{
+    /* DEBUG */
+    background-color: blueviolet;
+}
+
+.square-box{
+        /* DEBUG */
+        background-color: rgb(43, 226, 150);
+}
+
+.row-box{
+    /* DEBUG */
+    height: 400px;
+}
+.row-box > div {
+        /* DEBUG */
+    border: 1px solid black;
+    width: calc(100vw / 3);
+}
+
+.box-sx, .box-dx{
+    flex-wrap: wrap;
+}
+
+.cstmr{
+    width: calc(100% / 2);
+    height: 200px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+/* Free trial */
+
+.free-trial{
+    /* DEBUG */
+    border: 1px solid black;
+}
+
+.free-trial div{
+    width: 60%;
+    padding: 2rem 2rem 2rem 0;
+}
+
+.free-trial .btn{
+    margin: 2rem 0 2rem 1rem;
+}
+
+/* FAQ */
+
+.faq{
+    /* DEBUG */
+    border: 1px solid black;
+}
+
+
+
 
 
 
