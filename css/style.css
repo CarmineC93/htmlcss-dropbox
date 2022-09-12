@@ -54,5 +54,39 @@ li{
 
 /* MAIN */
 
+/* Jumbotron */
+
+.background{
+        /* DEBUG */
+    background-color: aqua;
+    height: 300px;
+}
+
+.big-box{
+    /* DEBUG */
+    background-color: bisque;
+
+    width: 80%;
+    margin: auto;
+    max-width: 1200px;
+    padding: 3rem 8rem;
+}
+
+   /* text box */
+.col-sx{
+    width: 35%;
+}
+
+   /* image box */
+.col-dx{
+    width: 65%;
+    /* DEBUG */
+    background-color: rgb(193, 123, 38);
+}
+
+/* First section */
+
+
+
 
 
