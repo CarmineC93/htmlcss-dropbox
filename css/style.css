@@ -18,15 +18,27 @@ img{
     display: flex;
 }
 
+.btn{
+    background-color: #0061FF;
+    color: white;
+    border: #0061FF;
+    cursor: pointer;
+}
+
 a, ul {
     text-decoration: none;
     list-style-type: none;
+    color: black;
 }
 
 .container{
     width: 50%;
     margin: 7rem auto;
     max-width: 1200px;
+}
+
+p{
+    font-size: small;
 }
 
 hr {
@@ -39,12 +51,13 @@ hr {
 /* HEADER */
 header{
     height: 80px;
-    background-color: greenyellow;
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     z-index: 999;
+    font-size: small;
+    background-color: white;
 }
 
 nav{    
@@ -55,18 +68,20 @@ nav{
 }
 
 .logo, header .btn{
-    margin:0 1rem ;
+    margin: -0.4rem 1rem ;
+}
+
+header .btn{
+    padding: 0.5rem 0.8rem;
 }
 
 nav ul{
-    gap: 20px;
+    gap: 30px;
 }
 
-li{
-    /* DEBUG */
-    border: 1px solid black;
+.background{
+    background-color: #B4D0E7;
 }
-
 
 /* MAIN */
 main{
@@ -74,31 +89,46 @@ main{
 }
 
 /* Jumbotron */
-.background{
-        /* DEBUG */
-    background-color: aqua;
+
+h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
 }
 
 .big-box{
-    /* DEBUG */
-    background-color: bisque;
-
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     max-width: 1200px;
-    padding: 8rem 0rem;
+    padding: 5rem 0 1rem;
 }
 
 /* text box */
 .small-side{
     width: 35%;
+    padding: 0 1.5rem 0rem 0 ;
+}
+
+.small-side .btn{
+    margin: 1rem 0;
+    padding: 0.5rem 0.8rem;
+}
+
+.small-side i{
+    margin-top: 3rem;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 /* image box */
 .large-side{
     width: 65%;
-    /* DEBUG */
-    background-color: rgb(193, 123, 38);
+    position: relative;
+}
+
+.large-side img{
+    position: absolute;
+    bottom: -70px;
 }
 
 /* First section */
@@ -190,11 +220,6 @@ main{
     background-color: blueviolet;
 }
 
-.square-box{
-        /* DEBUG */
-        background-color: rgb(43, 226, 150);
-}
-
 .row-box{
     /* DEBUG */
     height: 400px;
@@ -242,12 +267,11 @@ main{
 /* FOOTER */
 footer{
  background-color: black;
+ color: white;
 }
 
-
-.big-box{
-    /* DEBUG */
-    background-color: aquamarine;
+footer a, footer ul{
+    color: white;
 }
 
 .top-footer-row{
