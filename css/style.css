@@ -146,6 +146,7 @@ h1{
 }
 
 .large-side img{
+    width: 93%;
     position: absolute;
     bottom: -70px;
 }
@@ -445,22 +446,40 @@ footer{
  color: white;
 }
 
-footer a, footer ul{
+footer a{
     color: white;
 }
 
 .top-footer-row{
-    gap: 10px;
-    margin: 2rem 0;
+    gap: 20px;
+    margin: 2rem 0 4rem 0;
+    justify-content: space-between;
 }
    
 .ft{
-    width: calc(100% / 5 - 10px);
+    width: calc(100% / 5 - 20px);
+}
+
+.ft li {
+    margin: 1rem 0;
 }
 
 .language{
     margin: 2rem 0;
+    line-height: 2rem;
+    position: relative;
 }
+
+.selector-arrow{
+    margin: 0 0.3rem;
+    position: absolute;
+    top: 0.3rem;
+}
+
+
+
+
+
 
 
 
