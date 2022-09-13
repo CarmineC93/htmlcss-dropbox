@@ -8,6 +8,7 @@
 
      <!-- link file style -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation-style.css">
 
      <!-- link font -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,26 +26,27 @@
         <nav class="flex">
             <!-- header sx -->
             <div class="flex head-sx">
-                <div class="logo">
-                    <a href="#"><img src="img/logo-small.png" alt=""></a>
-                </div>
-
                 <ul class="flex">
-                    <li><a href="">Perchè Dropbox</a></li>
-                    <li><a href="">Funzioni</a></li>
-                    <li><a href="">Piani e Prezzi</a></li>
+                    <li>
+                        <div class="logo">
+                            <a href="#"><img src="img/logo-small.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="light"><a href="">Perchè Dropbox</a></li>
+                    <li class="light"><a href="">Funzioni</a></li>
+                    <li class="light"><a href="">Piani e Prezzi</a></li>
                 </ul>
             </div>
             <!-- header dx -->
             <div class="flex head-dx">
                 <ul class="flex">
-                    <li><a href="">Supporto</a></li>
-                    <li><a href="">Contatta l'ufficio vendite</a></li>
-                    <li><a href="">Accedi</a></li>
+                    <li class="light"><a href="">Supporto</a></li>
+                    <li class="light"><a href="">Contatta l'ufficio vendite</a></li>
+                    <li class="light"><a href="">Accedi</a></li>
+                    <li><button class="btn">Inizia</button></li>
                 </ul>
-                <button class="btn">Inizia</button>
+                
             </div>
-           
         </nav>
     </header>
     <!-- /Header -->
@@ -75,7 +77,7 @@
         <section class="container" id="second-sec">
 
             <!-- Plans -->
-            <h2>Trova il piano business che fa per te</h2>
+            <h2  id="plans">Trova il piano business che fa per te</h2>
             <div class="checkbox"> 
                 <input type="radio" name="invoice"> <span>Fatturazione mensile</span>
                 <input type="radio" name="invoice"> <span>Fatturazione annuale</span>
@@ -292,26 +294,41 @@
                 <h2>Domande Frequenti</h2>
                 
                     <div class="question box1 flex">
-                        <h5>Qual è la differenza tra Dropbox business Standard e Drop Business Advanced?</h5> 
-                        <span class="down"><i class="fa-solid fa-chevron-down"></i></span> 
-                        <span class="up"><i class="fa-solid fa-chevron-up"></i></span>
+                        <div>
+                            <h5>Qual è la differenza tra Dropbox business Standard e Drop Business Advanced?</h5>                    
+                            <div class="answer box1"> La differenza è scritta <a href="#plans">qui</a> </div>
+                        </div>
+                         
+                        <div class="arrw">
+                            <span class="down"><i class="fa-solid fa-chevron-down"></i></span> 
+                            <span class="up"><i class="fa-solid fa-chevron-up"></i></span>
+                        </div>
                     </div> 
-                    <div class="answer box1"> La differenza è scritta sopra</div>
 
-                    <div class="question box1 flex">
-                        <h5>Qual è la differenza tra Dropbox business Standard e Drop Business Advanced?</h5> 
-                        <span class="down"><i class="fa-solid fa-chevron-down"></i></span> 
-                        <span class="up"><i class="fa-solid fa-chevron-up"></i></span>
+                    <div class="question box2 flex">
+                        <div>
+                            <h5>Qual è la differenza tra Dropbox business Standard e Drop Business Advanced?</h5>                    
+                            <div class="answer box2"> La differenza è scritta <a href="#plans">qui</a> </div>
+                        </div>
+                         
+                        <div class="arrw">
+                            <span class="down"><i class="fa-solid fa-chevron-down"></i></span> 
+                            <span class="up"><i class="fa-solid fa-chevron-up"></i></span>
+                        </div>
                     </div> 
-                    <div class="answer box1"> La differenza è scritta sopra</div>
 
 
-                    <div class="question box1 flex">
-                        <h5>Qual è la differenza tra Dropbox business Standard e Drop Business Advanced?</h5> 
-                        <span class="down"><i class="fa-solid fa-chevron-down"></i></span> 
-                        <span class="up"><i class="fa-solid fa-chevron-up"></i></span>
+                    <div class="question box3 flex">
+                        <div>
+                            <h5>Qual è la differenza tra Dropbox business Standard e Drop Business Advanced?</h5>                    
+                            <div class="answer box3"> La differenza è scritta <a href="#plans">qui</a> </div>
+                        </div>
+                         
+                        <div class="arrw">
+                            <span class="down"><i class="fa-solid fa-chevron-down"></i></span> 
+                            <span class="up"><i class="fa-solid fa-chevron-up"></i></span>
+                        </div>
                     </div> 
-                    <div class="answer box1"> La differenza è scritta sopra</div>
 
             </div>
         </section>

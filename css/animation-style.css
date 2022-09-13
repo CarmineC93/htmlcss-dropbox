@@ -1,0 +1,45 @@
+header .light:hover{
+    border-bottom: 2px solid black;
+}
+
+.head-sx .logo{
+    border: none;
+}
+
+.btn:hover{
+    background-color: rgb(83, 172, 239);
+    border:1px solid rgb(83, 172, 239) ;
+}
+
+.white-btn:hover{
+    background-color: rgb(247, 247, 247);
+}
+
+nav{
+    line-height: 79px;
+}
+
+.box1:hover .answer{
+display:block;
+}
+
+.box2:hover .answer{
+    display: block;
+}
+
+.box3:hover .answer{
+    display: block;
+}
+
+.box1:hover .up{
+    z-index: 2;
+}
+.box2:hover .up{
+    z-index: 2;
+}
+.box3:hover .up{
+    z-index: 2;
+    
+}
+
+

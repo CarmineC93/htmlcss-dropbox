@@ -76,14 +76,16 @@ header nav li{
 }
 
 nav{    
-    height: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;    
 }
 
 .logo, header .btn{
-    margin: -0.4rem 1rem ;  /* non mi piace, sistemare */
+    margin: 0 1rem ;  
+}
+
+.logo img{
+    width: 90%;
 }
 
 header .btn{
@@ -353,9 +355,7 @@ li::marker{
     overflow: auto;    
     padding: 2.5rem 1rem;
     background-color: #F5F5F5;
-
 }
-
 
 .logo-customer{
     width: 42%;
@@ -423,22 +423,36 @@ li::marker{
     border-top: 1px solid gray;
 }
 
+.answer{
+    display: none;
+}
+
 .faq-box:last-child{
     border-bottom: 1px solid gray;
 }
 
+.arrw{
+    position: relative;
+}
+
 .down{
+    position: relative;
     cursor: pointer;
+    z-index: 1;
+    background-color: white;
 }
 
 .up{
-    display: none;
+    position: absolute;
     cursor: pointer;
+    left: 0;
+    background-color: white;
+
+
 }
 
-.answer{
-    display:none;
-}
+
+
 
 /* FOOTER */
 footer{
@@ -472,6 +486,7 @@ footer a{
 
 .selector-arrow{
     margin: 0 0.3rem;
+    cursor: pointer;
     position: absolute;
     top: 0.3rem;
 }
