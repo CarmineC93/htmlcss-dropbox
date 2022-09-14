@@ -12,6 +12,7 @@
 /* HEADER */
 header .light:hover{
     border-bottom: 2px solid black;
+    background-color: rgba(187, 206, 208, 0.882);
 }
 
 .head-sx .logo{
@@ -20,6 +21,26 @@ header .light:hover{
 
 nav{
     line-height: 79px;
+}
+
+/* NestList */
+.nestlist{
+    display: none;
+}
+
+.nestlist li{
+    cursor: pointer;
+}
+
+.light:hover .nestlist{
+    display: block;
+    border: 0 1px solid rgba(0, 0, 0, 0.759);
+    background:linear-gradient(rgba(187, 206, 208, 0.882), rgba(152, 167, 165, 0.844)); 
+    padding: 0.1rem ;
+}
+
+.light>div{
+    flex-direction: row;
 }
 
 /* FAQ */
