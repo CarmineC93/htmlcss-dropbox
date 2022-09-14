@@ -59,7 +59,6 @@ hr {
 }
 
 
-
 /* HEADER */
 header{
     height: 80px;
@@ -164,8 +163,11 @@ section h2{
 
 /* Plans*/
 
-.checkbox span{
+.checkbox label{
     margin: 1rem 2rem 2rem 0;
+    font-size: 0.7rem;
+    position: relative;
+    bottom: 2px;
 }
 
 .checkbox input{
