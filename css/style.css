@@ -69,6 +69,7 @@ header{
     top: 0;
     z-index: 999;
     background-color: white;
+    box-shadow: 10px 5px 5px rgba(18, 17, 17, 0.22);
 }
 
 header nav li{
@@ -323,10 +324,8 @@ li::marker{
 }
 
 /* Reviewers squares*/
-
 .row-box{
     align-items: flex-start;
-
     }
 
 .row-box > div {
@@ -349,11 +348,9 @@ li::marker{
     transform: scale(0.7);
 }
 
-
 .box-output{
     height: calc(100vw / 3); 
     overflow: auto;    
-    padding: 2.5rem 1rem;
     background-color: #F5F5F5;
 }
 
@@ -436,7 +433,7 @@ li::marker{
 }
 
 .down{
-    position: relative;
+    position: absolute;
     cursor: pointer;
     z-index: 1;
     background-color: white;
@@ -447,11 +444,7 @@ li::marker{
     cursor: pointer;
     left: 0;
     background-color: white;
-
-
 }
-
-
 
 
 /* FOOTER */

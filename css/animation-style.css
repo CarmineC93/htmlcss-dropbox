@@ -1,3 +1,15 @@
+
+/* COMMON */
+.btn:hover{
+    background-color: rgb(83, 172, 239);
+    border:1px solid rgb(55, 145, 215) ;
+}
+
+.white-btn:hover{
+    background-color: rgb(247, 247, 247);
+}
+
+/* HEADER */
 header .light:hover{
     border-bottom: 2px solid black;
 }
@@ -6,21 +18,13 @@ header .light:hover{
     border: none;
 }
 
-.btn:hover{
-    background-color: rgb(83, 172, 239);
-    border:1px solid rgb(83, 172, 239) ;
-}
-
-.white-btn:hover{
-    background-color: rgb(247, 247, 247);
-}
-
 nav{
     line-height: 79px;
 }
 
+/* FAQ */
 .box1:hover .answer{
-display:block;
+    display:block;
 }
 
 .box2:hover .answer{
@@ -39,7 +43,40 @@ display:block;
 }
 .box3:hover .up{
     z-index: 2;
-    
 }
+
+
+/* REVIEWERS SQAURES */
+.box-output{
+    position: relative;
+}
+
+.output{
+    background-color: #F5F5F5;
+    padding: 2.5rem 1rem;
+    position:absolute;
+    left: 0;
+    top: 0;    
+}
+
+.first-rvwr{
+    z-index: 10;
+}
+
+.box-output div[class*="xb"] {
+    z-index: 1; 
+}
+
+.row-box .cstmr:hover{
+    border: 15px solid rgba(255, 255, 255, 0.669);
+}
+
+/* predisposto cambio di finestra .output quando c'è un :hover
+ o click su logo dell'azienda. Serve Js, con :hover funzionerebbe solo 
+se fosse l'uno figlio dell'altro. */
+
+
+
+
 
 
