@@ -28,11 +28,19 @@ nav{
     display: none;
 }
 
+.light{
+    position: relative;
+}
+
 .nestlist li{
     cursor: pointer;
 }
 
 .light:hover .nestlist{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    
     display: block;
     border: 0 1px solid rgba(0, 0, 0, 0.759);
     background:linear-gradient(rgba(187, 206, 208, 0.882), rgba(152, 167, 165, 0.844)); 
@@ -65,6 +73,8 @@ nav{
 .box3:hover .up{
     z-index: 2;
 }
+
+/* oppure più semplicemente con transform:rotate(180deg) sulla freccia in modo da farla ruotare quando ci passiamo sopra con mouse */
 
 
 /* REVIEWERS SQAURES */

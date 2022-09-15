@@ -162,6 +162,8 @@ section h2{
 }
 
 /* Plans*/
+
+/* Checkbox radio button */
 .checkbox{
     margin: 1rem 0 2rem 1.3rem;
     position: relative;
@@ -176,7 +178,7 @@ section h2{
 
 }
 
-.checkmark {
+.checkmark {   /* radio-button finto */
     position: absolute;
     top: 0;
     left: -19px;
@@ -224,6 +226,42 @@ label .checkmark:after {
     border-radius: 50%;
     background: white;
   }
+/* OPPURE più correttamente con stessa logica: 
+ nascondo il radio button originale:
+
+input [tybe="radio"]{
+    display:none;}
+
+    creiamo un radio button finto:
+
+input [tybe="radio"] + label:before{
+    content: "";
+    display: inline-block; di default gli pseudo elementi sono inline
+    width: 16px;
+    height:16px;
+    border: 2px solid gray;
+    border-radius:50%;
+    margin-right:10px;
+    vertical-align:sub; 
+}
+
+    poichè ora il radio originale non esiste più, chi deve catturare il click è il label-
+    Quindi è fondamentale collegare il label al nuovo radio button finto con 
+    id e for e poi attraverso :checked  :
+     
+   [n.b. Label dovrà essere fratello (+) del label, perchè non può essere figlio di input, essendo input un self-closing tag
+    Come ho fatto io, mettendo input DENTRO label, è abbastanza scorretto per questioni di accessibilità ai non vedenti.]
+
+input[type:"radio"]:checked + label:before{
+    box-shadow: inset 0 0 0 4px gray ; per farlo un ombreggiatura interno 
+    border-color: blue;
+ }
+
+
+*/
+
+
+/* /Checkbox radio button */
 
 .row{
     justify-content: space-between;
@@ -391,7 +429,7 @@ li::marker{
 
 .cstmr{
     width: calc(100% / 2);
-    height: calc(100vw / 6);
+    height: calc(100vw / 6); /* usiamo la vw in altezza perchè è l'unica misura che abbiamo impostata */
     padding: 1rem;
     justify-content: center;
     align-items: center;
